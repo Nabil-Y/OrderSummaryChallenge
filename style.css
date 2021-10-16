@@ -13,7 +13,7 @@ a {
     text-decoration: none;
 }
 
-section {
+main {
     width: 30%;
     min-width: 405px;
     max-width: 640px;
@@ -24,7 +24,7 @@ section {
     flex-flow: column;
     overflow: hidden;
     justify-content: center;
-    box-shadow: 0 20px 50px -20px hsl(224, 23%, 55%, .8);
+    box-shadow: 0 20px 50px -30px hsl(224, 23%, 55%, .8);
     }
 
 .hero {
@@ -34,7 +34,8 @@ section {
 h1 {
     color: hsl(223, 47%, 23%);
     text-align: center;
-    margin-top: 0;
+    margin-top: 2.5rem;
+    margin-bottom: 0;
     font-weight: 900;
     font-size: 1.8rem;
 }
@@ -45,7 +46,7 @@ p {
 }
 
 aside {
-    padding: 3rem 3rem 1rem 3rem;
+    padding: 0 2.5rem 1rem 2.5rem;
 }
 
 .plan {
@@ -53,7 +54,7 @@ aside {
     align-items: center;
     background: hsl(225, 100%, 98%);
     border-radius: 10px;
-    margin: 40px 0;
+    margin: 25px 0;
     padding: 10px 20px;
 }
 
@@ -75,6 +76,7 @@ aside {
     text-decoration: underline;
     font-weight: 700;
     color: hsl(245, 75%, 52%);
+    font-size: 0.9rem;
 }
 
 .plan a:hover {
@@ -86,7 +88,7 @@ aside {
     border-radius: 10px;
     text-align: center;
     padding: 15px;
-    box-shadow: 0 20px 50px -20px hsl(245, 75%, 52%);
+    box-shadow: 0 20px 40px -20px hsl(245, 75%, 52%);
 }
 
 .btn:hover {
@@ -135,7 +137,7 @@ p a:hover {
         padding: 10px 10px;
     }
     
-    section {
+    main {
        width: 75%;
        min-width: 340px;
        max-width: 640px;

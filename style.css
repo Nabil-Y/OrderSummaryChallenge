@@ -24,14 +24,14 @@ section {
     flex-flow: column;
     overflow: hidden;
     justify-content: center;
-    box-shadow: 0 20px 50px -20px hsl(224, 23%, 55%, .8);
+    box-shadow: 0 20px 50px -30px hsl(224, 23%, 55%, .8);
     }
 
 .hero {
     padding: 0;
 }
 
-h1 {
+h2 {
     color: hsl(223, 47%, 23%);
     text-align: center;
     margin-top: 0;
@@ -53,7 +53,7 @@ aside {
     align-items: center;
     background: hsl(225, 100%, 98%);
     border-radius: 10px;
-    margin: 40px 0;
+    margin: 25px 0;
     padding: 10px 20px;
 }
 
@@ -75,6 +75,7 @@ aside {
     text-decoration: underline;
     font-weight: 700;
     color: hsl(245, 75%, 52%);
+    font-size: 0.9rem;
 }
 
 .plan a:hover {
@@ -86,7 +87,7 @@ aside {
     border-radius: 10px;
     text-align: center;
     padding: 15px;
-    box-shadow: 0 20px 50px -20px hsl(245, 75%, 52%);
+    box-shadow: 0 20px 40px -20px hsl(245, 75%, 52%);
 }
 
 .btn:hover {
@@ -127,7 +128,7 @@ p a:hover {
         background: hsl(225, 100%, 94%) url(./images/pattern-background-mobile.svg) repeat-x;
     }
 
-    h1 {
+    h2 {
         font-size: 1.4rem;
     }
 

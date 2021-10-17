@@ -1,12 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+
 body {
-    margin: 0;
-    padding: 0;
     font-size: 1rem;
     box-sizing: border-box;
     background: hsl(225, 100%, 94%) url(./images/pattern-background-desktop.svg) repeat-x;
     font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
 
 a {
@@ -17,7 +29,6 @@ main {
     width: 30%;
     min-width: 405px;
     max-width: 640px;
-    margin: 100px auto;
     background: white;
     border-radius: 20px;
     display: flex;
@@ -25,6 +36,7 @@ main {
     overflow: hidden;
     justify-content: center;
     box-shadow: 0 20px 50px -30px hsl(224, 23%, 55%, .8);
+    margin: 100px 0;
     }
 
 .hero {
@@ -59,17 +71,23 @@ aside {
 }
 
 
-.title {
+h2 {
     font-weight: bold;
+    font-size: 1rem;
     color: hsl(223, 47%, 23%);
-    
+    margin-bottom: 0;
 }
 
 
-.plan p {
+.info {
     text-align: left;
     flex: 60%;
     margin-left: 10px;
+}
+
+.info p {
+    text-align: left;
+    margin-top: 5px;
 }
 
 .plan a {
@@ -77,10 +95,12 @@ aside {
     font-weight: 700;
     color: hsl(245, 75%, 52%);
     font-size: 0.9rem;
+    transition: all 0.8s ease;
 }
 
 .plan a:hover {
-    color: hsl(245, 75%, 52%, 0.6);
+    opacity: 0.6;
+    text-decoration-color: transparent;
 }
 
 .btn {
@@ -89,25 +109,26 @@ aside {
     text-align: center;
     padding: 15px;
     box-shadow: 0 20px 40px -20px hsl(245, 75%, 52%);
+    transition: opacity 0.8s ease;
 }
 
 .btn:hover {
-    background: hsl(245, 75%, 52%, 0.6);
+    opacity: 0.6;
 }
 
-.btn a {
+a .btn {
     color: white;
     font-weight: 700;
-    display: block;
 }
 
-.btn + p {
+a + p {
     font-weight: 700;
     padding: 20px;
 }
 
 p a {
     color: hsl(224, 23%, 55%);
+    transition: color 0.8s ease;
 }
 
 p a:hover {
@@ -117,7 +138,7 @@ p a:hover {
 
 
 .attribution {
-     font-size: 11px; text-align: center; 
+    font-size: 11px; text-align: center; 
     }
 
 .attribution a {

@@ -77,10 +77,11 @@ aside {
     font-weight: 700;
     color: hsl(245, 75%, 52%);
     font-size: 0.9rem;
+    transition: opacity 1s ease;
 }
 
 .plan a:hover {
-    color: hsl(245, 75%, 52%, 0.6);
+    opacity: 0.6;
 }
 
 .btn {
@@ -89,25 +90,26 @@ aside {
     text-align: center;
     padding: 15px;
     box-shadow: 0 20px 40px -20px hsl(245, 75%, 52%);
+    transition: opacity 1s ease;
 }
 
 .btn:hover {
-    background: hsl(245, 75%, 52%, 0.6);
+    opacity: 0.6;
 }
 
-.btn a {
+a .btn {
     color: white;
     font-weight: 700;
-    display: block;
 }
 
-.btn + p {
+a + p {
     font-weight: 700;
     padding: 20px;
 }
 
 p a {
     color: hsl(224, 23%, 55%);
+    transition: color 1s ease;
 }
 
 p a:hover {
